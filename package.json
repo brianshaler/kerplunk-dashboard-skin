@@ -2,7 +2,7 @@
   "name": "kerplunk-dashboard-skin",
   "displayName": "Dashboard Skin",
   "description": "Layout and styles for admin dashboard. Only disable if installing a different skin.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "keywords": [
     "kerplunk-plugin",
     "kp:Admin"
