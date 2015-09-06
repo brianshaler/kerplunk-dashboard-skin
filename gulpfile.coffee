@@ -12,23 +12,10 @@ glut gulp,
       dest: 'lib'
     components:
       runner: coffeeAmdify
-      src: ['src/components/**/*.coffee']
+      src: 'src/components/**/*.coffee'
       dest: 'public/components'
-    client:
-      runner: coffee
-      src: 'src/public/**/*.coffee'
-      dest: 'public'
-    clientCopy:
-      src: [
-        'src/public/**/*.js'
-        'src/public/**/*.css'
-        'src/public/**/*.jpg'
-        'src/public/**/*.woff'
-        'src/public/**/*.ttf'
-        'src/public/**/*.otf'
-        'src/public/**/*.svg'
-        'src/public/**/*.eot'
-      ]
+    assets:
+      src: 'assets/**'
       dest: 'public'
     stylus:
       runner: require 'gulp-stylus'
