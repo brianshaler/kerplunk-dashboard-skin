@@ -125,6 +125,8 @@ a:focus {
 .content {
   padding: 20px 15px;
   background: #f9f9f9;
+}
+div.content {
   overflow: auto;
 }
 /* Utility */
