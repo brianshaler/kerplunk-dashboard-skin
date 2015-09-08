@@ -44,7 +44,7 @@ module.exports = React.createFactory React.createClass
     Nav = getComponent @props.globals.public.navComponent
     Content = getComponent @props.contentComponent
     LoadingComponent = getComponent @props.globals.public.loadingComponent
-    anyLoading = !!(_.find @props.components, (c) -> c == 'loading')
+    # anyLoading = !!(_.find @props.components, (c) -> c == 'loading')
 
     DOM.div
       className: 'dashboard-container fixed skin-black'
@@ -60,15 +60,15 @@ module.exports = React.createFactory React.createClass
           Nav()
         DOM.aside
           className: 'right-side'
-          style:
-            display: ('none' if anyLoading)
+          # style:
+          #   display: ('none' if anyLoading)
         ,
           _.map (@props.globals.public.layout?.preContent ? []), (componentPath, key) =>
             Component = getComponent componentPath
             Component _.extend {}, @props, @state,
               key: "layout-precontent-#{key}"
-          if anyLoading
-            LoadingComponent()
+          # if anyLoading
+          #   LoadingComponent()
           Content
             key: @props.currentUrl
       _.map stylesheets, (stylesheet) ->
