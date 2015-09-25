@@ -7,8 +7,9 @@ module.exports = (System) ->
       loadingComponent: 'kerplunk-dashboard-skin:loading'
       layout:
         admin: 'kerplunk-dashboard-skin:layout'
-      styles:
-        'kerplunk-dashboard-skin/css/AdminLTE.css': ['/admin/**', '/admin/']
-        'kerplunk-dashboard-skin/css/font-awesome.css': ['/admin/**', '/admin/']
-        'kerplunk-dashboard-skin/css/layout.css': ['/admin/**', '/admin/']
-        #'kerplunk-dashboard-skin/css/ionicons.css': ['/admin/**', '/admin/']
+      css:
+        'kerplunk-dashboard-skin:layout': [
+          'kerplunk-dashboard-skin/css/AdminLTE.css'
+          'kerplunk-dashboard-skin/css/font-awesome.css'
+          'kerplunk-dashboard-skin/css/layout.css'
+        ]
