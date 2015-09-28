@@ -3,6 +3,12 @@
   "displayName": "Dashboard Skin",
   "description": "Layout and styles for admin dashboard. Only disable if installing a different skin.",
   "version": "0.1.0",
+  "kerplunk": {
+    "dependencies": [
+      "kerplunk-bootstrap",
+      "kerplunk-dashboard"
+    ]
+  },
   "keywords": [
     "kerplunk-plugin",
     "kp:Admin"
