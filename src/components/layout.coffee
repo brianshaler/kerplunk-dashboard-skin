@@ -1,9 +1,6 @@
 _ = require 'lodash'
 React = require 'react'
 
-routeMatcher = require 'route-matcher'
-routeMatcher = routeMatcher.routeMatcher if routeMatcher.routeMatcher
-
 {DOM} = React
 
 module.exports = React.createFactory React.createClass
